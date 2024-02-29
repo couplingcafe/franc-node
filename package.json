@@ -1,0 +1,38 @@
+{
+  "name": "@qertis/franc-node",
+  "version": "6.2.0",
+  "description": "franc cjs module - common js package",
+  "author": "Denis Baskovsky (https://baskovsky.ru/)",
+  "main": "dist/index.cjs",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "node test/index.cjs"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@qertis"
+  },
+  "keywords": [
+    "franc commonjs",
+    "franc cjs",
+    "franc node"
+  ],
+  "files": [
+    "dist/index.cjs"
+  ],
+  "engines": {
+    "node": ">= 20"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "franc": "6.2.0",
+    "rollup": "4.12.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qertis/franc-node.git"
+  }
+}
